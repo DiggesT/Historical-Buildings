@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Typography from "@mui/material/Typography";
+import { NavLink } from "react-router-dom";
+import mapIcon from "./images/icons/mapIcon.svg";
+import logoIcon from "./images/icons/logoIcon.png";
+import building from "./images/general/building.png";
+import { Box, IconButton } from "@mui/material";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box
+      component="div"
+      sx={{
+        position: "absolute",
+        width: "100%",
+        height: "100%",
+        backgroundImage: `url(${building})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            margin: "1rem",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div style={{ alignSelf: "center" }}>
+            <img width={50} src={logoIcon} alt="logoIcon.png" />
+          </div>
+          <IconButton aria-label="delete">
+            <NavLink to={"/map"}>
+              <img width={50} src={mapIcon} alt="mapIcon.svg" />
+            </NavLink>
+          </IconButton>
+        </div>
+        <div>
+          <Typography
+            style={{ fontWeight: "bold" }}
+            align="center"
+            fontSize={"3rem"}
+            mt={2}
+            mb={2}
+          >
+            Исторические здания города Красноярска
+          </Typography>
+        </div>
+      </div>
+    </Box>
   );
-}
+};
 
 export default App;
