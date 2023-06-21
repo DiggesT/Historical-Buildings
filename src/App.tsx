@@ -1,11 +1,17 @@
 import Typography from "@mui/material/Typography";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import mapIcon from "./images/icons/mapIcon.svg";
 import logoIcon from "./images/icons/logoIcon.png";
 import building from "./images/general/building.png";
 import { Box, IconButton } from "@mui/material";
 
 export const App = () => {
+  const navigate = useNavigate();
+
+  const handleOnClick = () => {
+    navigate("/map");
+  };
+
   return (
     <Box
       component="div"
@@ -17,7 +23,9 @@ export const App = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        cursor: "pointer",
       }}
+      onClick={handleOnClick}
     >
       <div>
         <div
