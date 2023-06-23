@@ -8,11 +8,11 @@ import Map from "./views/Map";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Historical-Buildings/",
     element: <App />,
   },
   {
-    path: "/map",
+    path: "/Historical-Buildings/map",
     element: <Map />,
   },
 ]);

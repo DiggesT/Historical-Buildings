@@ -1,7 +1,7 @@
 {
-  "name": "web-map",
+  "name": "Historical-Buildings",
   "version": "0.1.0",
-  "homepage": "https://diggest.github.io/Historical-Buildings",
+  "homepage": "https://diggest.github.io/Historical-Buildings/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",

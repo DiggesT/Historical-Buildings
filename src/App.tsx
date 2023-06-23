@@ -1,33 +1,32 @@
-import Typography from "@mui/material/Typography";
+import "./App.css";
+import { IconButton, Typography } from "@mui/material";
 import { NavLink, useNavigate } from "react-router-dom";
 import mapIcon from "./images/icons/mapIcon.svg";
 import logoIcon from "./images/icons/logoIcon.png";
 import building from "./images/general/building.png";
-import { Box, IconButton } from "@mui/material";
 
-export const App = () => {
+function App() {
   const navigate = useNavigate();
 
   const handleOnClick = () => {
-    navigate("/map");
+    navigate("/Historical-Buildings/map");
   };
 
   return (
-    <Box
-      component="div"
-      sx={{
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        backgroundImage: `url(${building})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        cursor: "pointer",
-      }}
-      onClick={handleOnClick}
-    >
-      <div>
+    <div className="App">
+      <div
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${building})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          cursor: "pointer",
+        }}
+        onClick={handleOnClick}
+      >
         <div
           style={{
             display: "flex",
@@ -39,7 +38,7 @@ export const App = () => {
             <img width={50} src={logoIcon} alt="logoIcon.png" />
           </div>
           <IconButton aria-label="delete">
-            <NavLink to={"/map"}>
+            <NavLink to={"/Historical-Buildings/map"}>
               <img width={50} src={mapIcon} alt="mapIcon.svg" />
             </NavLink>
           </IconButton>
@@ -56,8 +55,8 @@ export const App = () => {
           </Typography>
         </div>
       </div>
-    </Box>
+    </div>
   );
-};
+}
 
 export default App;
