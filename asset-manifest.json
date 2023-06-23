@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Historical-Buildings/static/css/main.6830fefd.css",
-    "main.js": "/Historical-Buildings/static/js/main.0d14d035.js",
+    "main.js": "/Historical-Buildings/static/js/main.b6fe30f1.js",
     "static/media/building.png": "/Historical-Buildings/static/media/building.2ec0ada6b2304554dfc3.png",
     "static/media/1.png": "/Historical-Buildings/static/media/1.b16486ca8859f7258519.png",
     "static/media/CityLibrary.png": "/Historical-Buildings/static/media/CityLibrary.e42a4c758d7f721009a1.png",
@@ -81,10 +81,10 @@
     "static/media/leftArrowIcon.svg": "/Historical-Buildings/static/media/leftArrowIcon.1ca68feda8938bc355de4c65aa73b6f6.svg",
     "index.html": "/Historical-Buildings/index.html",
     "main.6830fefd.css.map": "/Historical-Buildings/static/css/main.6830fefd.css.map",
-    "main.0d14d035.js.map": "/Historical-Buildings/static/js/main.0d14d035.js.map"
+    "main.b6fe30f1.js.map": "/Historical-Buildings/static/js/main.b6fe30f1.js.map"
   },
   "entrypoints": [
     "static/css/main.6830fefd.css",
-    "static/js/main.0d14d035.js"
+    "static/js/main.b6fe30f1.js"
   ]
 }
